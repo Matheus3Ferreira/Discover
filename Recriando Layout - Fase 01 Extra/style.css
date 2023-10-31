@@ -1,0 +1,80 @@
+:root {
+  --dark-gray: #3f3d56;
+  --pink: #ee24ff;
+  --light-gray: #828282;
+  --lighter-blue: #eceff2;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  margin: 64px auto;
+  width: 626px;
+  line-height: 22px;
+}
+
+main > h1 {
+  margin: 32px 0 16px;
+}
+
+main > p:first-of-type {
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--dark-gray);
+}
+
+.pink-title {
+  color: #ee24ff;
+}
+
+p,
+span {
+  line-height: 22px;
+  font-size: 15px;
+  color: var(--light-gray);
+}
+
+strong {
+  color: var(--dark-gray);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divisor {
+  width: 391px;
+  height: 0;
+  margin-bottom: 16px;
+  border-top: 1px solid var(--lighter-blue);
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+
+.wave-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
