@@ -1,0 +1,126 @@
+:root {
+  --background-color: #2c2b3d;
+  --dark-blue: #2f2e41;
+  --light-green: #00bfa6;
+  --light-gray: #c2c2c2;
+  --white: #ffffff;
+  --dark-gray: #00bfa6;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: JetBrains Mono, sans-serif;
+}
+
+/* ######################### header ######################### */
+
+body {
+  background: var(--background-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* ######################### header ######################### */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 71px 99px 0;
+  height: 50px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.logo img {
+  width: 13px;
+  height: 16px;
+}
+
+ul {
+  display: flex;
+  gap: 64px;
+}
+
+li {
+  list-style: none;
+}
+li:hover {
+  animation-name: get-bigger;
+  animation-duration: 0.8s;
+}
+
+/* ######################### main ######################### */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 77px;
+  margin: 101px auto 157px;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: JetBrains Mono, sans-serif;
+  font-weight: 700;
+  line-height: 40px;
+  color: var(--white);
+}
+
+h1 span {
+  color: var(--light-green);
+}
+
+p {
+  color: var(--light-gray);
+  text-align: center;
+  font-family: Open Sans, sans-serif;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+/* ######################### footer ######################### */
+
+.fixed-padlock {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer span {
+  border-top: 2px solid var(--dark-gray);
+  color: var(--white);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: JetBrains Mono, sans-serif;
+  padding: 27px 53px 0 53px;
+}
+
+footer span a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@keyframes get-bigger {
+  from {
+    font-size: 16px;
+  }
+  to {
+    font-size: 20px;
+  }
+}
