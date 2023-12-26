@@ -21,6 +21,10 @@ function resetGame(e) {
 
 function handleTryNumber(event) {
   event.preventDefault();
+  if (inputNumber.value === "") {
+    alert("Please enter a number");
+    return;
+  }
   xAttempts++;
   if (Number(inputNumber.value) == randomNumber) {
     changeModal();
