@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    
+    
+  <link rel="stylesheet" href="./Document_files/styles.css"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./Document_files/css2" rel="stylesheet"></head>
+  <body>
+
+
+    <section class="explore-section">
+        <img id="astronaut-img" src="./Document_files/astronaut.png" alt="A astronaut in space">
+      <div class="welcome-container">
+        <h1>Explore sem limites</h1>
+        <p>Porque o aprendizado é contínuo</p>
+        <button class="btn-go-down">
+          <img src="./Document_files/arrow-down.svg" alt="arrow pointing down">
+        </button>
+      </div>
+    </section>
+
+
+    <section class="card-section">
+      <div class="card">
+        <img src="./Document_files/yellow-planet.png" alt="yellow planet">
+        <h3>Não pare nunca</h3>
+        <p>
+          Se você deseja ter sucesso nos estudos, é fundamental que você adote
+          uma mentalidade de "não pare nunca". Estudar de forma consistente e
+          contínua é a chave para o progresso e a conquista de seus objetivos.
+        </p>
+      </div>
+      <div class="card">
+        <img src="./Document_files/blue-planet.png" alt="blue planet">
+        <h3>Só volta</h3>
+        <p>
+          Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba
+          que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem
+          mudar, ou podemos nos sentir desmotivados ou sobrecarregados.
+        </p>
+      </div>
+      <div class="card">
+        <img src="./Document_files/pink-planet.png" alt="pink planet">
+        <h3>Siga seu ritmo</h3>
+        <p>
+          Avançar pouco a pouco mantém progresso constante em objetivos,
+          evitando parar ou desistir. Mesmo pequenos passos nos aproximam do
+          destino e motivam a continuidade. Não subestime o poder de cada ação
+          rumo ao objetivo final.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="contact-section">
+      <div class="form-container">
+        <h2>Entre em contato</h2>
+        <form action="http://127.0.0.1:5500/index.html">
+          <input type="text" placeholder="Seu nome"><img src="http://127.0.0.1:5500/index.html" alt="Person icon">
+          <input type="text" placeholder="Email"><img src="http://127.0.0.1:5500/index.html" alt="@ icon">
+          <textarea placeholder="Digite sua mensagem aqui..."></textarea>
+          <button type="submit">Enviar mensagem</button>
+        </form>
+      </div>
+        <img src="./Document_files/stars.png" alt="purple stars">
+    </section>
+
+    
+    <footer>
+        <p>© 2023 - Rocketseat Explorer</p>
+    </footer>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
